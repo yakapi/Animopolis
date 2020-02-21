@@ -1,0 +1,99 @@
+/*
+   v2.0 | 20110126
+   License: Barlier Victor
+*/
+
+
+/*=========================== Class Perso ========================== */
+.pol-un{
+	font-family: 'Michroma', sans-serif;
+}
+.pol-deux{
+	font-family: 'Yantramanav', sans-serif;
+}
+.cl-un{
+	color: #BBDAE7;
+}
+.cl-deux{
+	color: #C1DACC;
+}
+.cl-trois{
+	color: #E7D8BC;
+}
+.cl-quatre{
+	color: #E6B4B5;
+}
+.bgc-un{
+	background-color: #BBDAE7;
+}
+.bgc-deux{
+	background-color: #C1DACC;
+}
+.bgc-trois{
+	background-color: #E7D8BC;
+}
+.bgc-quatre{
+	background-color: #E6B4B5;
+}
+.z-iup{
+	z-index: 8000;
+}
+.z-imax{
+	z-index: 10000;
+}
+.txt-maj{
+  text-transform: uppercase;
+}
+.txt-c{
+	text-align: center;
+}
+.rltv{
+ position: relative;
+ }
+ .ablst{
+ position: absolute;
+ }
+ .h-100{
+ height: 100%;
+ }
+ .w-100{
+ width: 100%;
+ }
+ .pall-15{
+ padding: 15px;
+ }
+ .mall-15{
+ margin: 15px;
+ }
+ .ovh{
+	 overflow: hidden;
+ }
+ .m-auto{
+	 margin: auto;
+ }
+ .da-blk{
+	 display: block;
+ }
+ .curs-p{
+	 cursor: pointer;
+ }
+ .brd{
+	 border: 2px solid red;
+ }
+ .flx-ac{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ }
+ .dis-none{
+	 display: none;
+ }
+.fw-b{
+	font-weight: bold;
+}
+.opa-up{
+  opacity: 1;
+}
+.opa-down{
+  opacity: 0;
+}
