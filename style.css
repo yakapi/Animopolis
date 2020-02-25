@@ -300,4 +300,6 @@ footer{
 	align-items: center;
 	background-color: grey;
 }
-.micro
+.flex{
+	display: flex;
+}
