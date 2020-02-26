@@ -71,6 +71,7 @@ a:hover{
 /*========================================================*/
 .barre-navigation{
 	height: 70px;
+	border-bottom: 1px solid black;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -133,7 +134,7 @@ a:hover{
 	height: 420px;
 }
 .container-carousel {
-  border: 1px solid #575757;
+  border-bottom: 1px solid #575757;
   width: 100%;
   height: 420px;
   overflow: hidden;
@@ -219,6 +220,50 @@ a:hover{
 	 height: 100%;
 	 width: 100%;
  }
+
+ .banner-content-title{
+	 display: flex;
+	 align-items: flex-start;
+	 flex-direction: column;
+	 justify-content: flex-end;
+ }
+ .banner-content-title img{
+	 height: 120px;
+	 width: 120px;
+ }
+ .banner-box-sizer{
+	 margin: 54px;
+ }
+ .banner-title{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+ }
+ .banner-title h2{
+	 font-size: 32px;
+	 font-weight: bold;
+ }
+ .slog{
+	 width: 65%;
+ }
+ .pet-banner .banner-box:nth-child(2n) .banner-content-title{
+	 align-items: flex-end;
+	 justify-content: flex-end;
+ }
+ .pet-banner .banner-box:nth-child(2n) .banner-title{
+	 flex-direction: row-reverse;
+ }
+ .pet-banner .banner-box:nth-child(2n) .banner-title h2{
+	 align-self: center;
+ }
+ .pet-banner .banner-box:nth-child(2n) .banner-box-sizer{
+	 display: flex;
+	 flex-direction: column;
+ }
+ .pet-banner .banner-box:nth-child(2n) .slog{
+	 text-align: right;
+	 align-self: flex-end;
+ }
  /*========================================================*/
  /*========================================================*/
  /*=================SATISFACTION=============================*/
@@ -299,5 +344,9 @@ footer{
 	justify-content: space-around;
 	align-items: center;
 	background-color: grey;
+	color: white;
+}
+footer a{
+	color:white;
 }
 .micro

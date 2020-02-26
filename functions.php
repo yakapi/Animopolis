@@ -68,6 +68,7 @@ add_filter('upload_mimes', 'wpc_mime_types');
                   wp_enqueue_script( 'ex-jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.1.js', array(), '1.0.0', false );
                   wp_enqueue_script( 'carousel', get_template_directory_uri() . '/assets/js/carousel.js', array(), '1.0.0', true );
                   wp_enqueue_script( 'progress-bar', get_template_directory_uri() . '/assets/js/progress-bar.js', array(), '1.0.0', true );
+                  wp_enqueue_script( 'filter-cat', get_template_directory_uri() . '/assets/js/filter-cat.js', array(), '1.0.0', true );
                   wp_enqueue_style( 'toolbox', get_template_directory_uri() . '/assets/css/toolbox.css', array(), '1.0' );
               }
               add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
