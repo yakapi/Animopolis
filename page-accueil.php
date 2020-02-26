@@ -11,7 +11,14 @@
   <?php
     wp_body_open();
     get_header();
-    echo 'hello';
+    ?>
+    <div class="carousel-news rltv ovh">
+      <?php get_template_part('assets/component/carousel');?>
+    </div>
+    <?php
+    get_template_part('assets/component/about');
+    include('assets/component/pet-banner.php');
+    get_template_part('assets/component/satisfaction', get_post_format());
     get_footer();
     wp_footer();
   ?>

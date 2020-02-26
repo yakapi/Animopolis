@@ -24,7 +24,7 @@
 	color: #E6B4B5;
 }
 .bgc-un{
-	background-color: #BBDAE7;
+	background-color: #f1f8fe;
 }
 .bgc-deux{
 	background-color: #C1DACC;
@@ -64,6 +64,9 @@
  }
  .mall-15{
  margin: 15px;
+ }
+ .mall-5{
+ margin: 5px;
  }
  .ovh{
 	 overflow: hidden;

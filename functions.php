@@ -21,8 +21,8 @@ add_filter('upload_mimes', 'wpc_mime_types');
 
       // Ajouter un logo perso
       add_theme_support( 'custom-logo', array(
-          'height' => 480,
-          'width'  => 720,
+          // 'height' => 74,
+          // 'width'  => 74,
       ) );
 
       // Add default posts and comments RSS feed links to head.
@@ -66,6 +66,8 @@ add_filter('upload_mimes', 'wpc_mime_types');
                   wp_enqueue_style( 'style-principale', get_stylesheet_uri() );
                   // wp_enqueue_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
                   wp_enqueue_script( 'ex-jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.1.js', array(), '1.0.0', false );
+                  wp_enqueue_script( 'carousel', get_template_directory_uri() . '/assets/js/carousel.js', array(), '1.0.0', true );
+                  wp_enqueue_script( 'progress-bar', get_template_directory_uri() . '/assets/js/progress-bar.js', array(), '1.0.0', true );
                   wp_enqueue_style( 'toolbox', get_template_directory_uri() . '/assets/css/toolbox.css', array(), '1.0' );
               }
               add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
@@ -111,7 +113,7 @@ function animopolis_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer Widgets', 'animopolis' ),
+        'name'          => esc_html__( 'Footer_Widgets', 'animopolis' ),
         'id'            => 'sidebar-3',
         'description'   => esc_html__( 'Add widgets you want in the footer here.', 'animopolis' ),
        'before_widget' => '<section id="%1$s" class="widget footer-widget %2$s">',
@@ -185,7 +187,9 @@ function all_register_post_types() {
         'labels' => $labels,
         'public' => true,
         'show_in_rest' => true,
+        'show_nav_menus' => true,
         'has_archive' => true,
+        'taxonomies' => array('category', 'post_tag'),
         'supports' => array( 'title', 'editor','thumbnail' ),
         'menu_position' => 5,
         'menu_icon' => 'dashicons-admin-customizer',
@@ -208,6 +212,8 @@ function all_register_post_types() {
          'public' => true,
          'show_in_rest' => true,
          'has_archive' => true,
+         'can_export'  => true,
+         'taxonomies' => array('category', 'post_tag'),
          'supports' => array( 'title', 'editor','thumbnail' ),
          'menu_position' => 5,
          'menu_icon' => 'dashicons-admin-customizer',
