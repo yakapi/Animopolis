@@ -62,8 +62,17 @@
  .pall-15{
  padding: 15px;
  }
+ .pall-10{
+	 padding: 10px;
+ }
+ .pall-5{
+	 padding: 5px;
+ }
  .mall-15{
  margin: 15px;
+ }
+ .mall-10{
+	 margin: 10px;
  }
  .mall-5{
  margin: 5px;

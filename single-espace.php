@@ -35,7 +35,7 @@ get_header();
     </div>
   </a>
 </div>
-<?php 
+<?php
 $espace_name = get_the_title();
 $espace = $espace_name . '-besancon';
 
@@ -56,8 +56,9 @@ if ($query->have_posts()) {
       array_push($cat_ids, $category[$i]->cat_ID);
     };
   }
-  echo '</ul>';
+
 } else {
+  echo "error";
 }
 /* Restore original Post Data */
 wp_reset_postdata();
@@ -68,12 +69,12 @@ $cat_ids = array_unique($cat_ids);
 $cat_ids = array_values($cat_ids);
 
 ?>
-<nav>
-  <ul>
+<nav style="color: <?php the_field('filter-color') ?>; border-top: 2px solid <?php the_field('border-filter') ?>" class="w-100 filter-nav-brand">
+  <ul class="filter-brand flx-ac">
     <?php
     for ($i = 0; $i < count($unik_cat); $i++) {
     ?>
-      <li>
+      <li class="filter-list txt-maj pall-5 mall-15 txt-c">
         <p class="filter-button" data-tag="<?php echo $tag ?>" data-cat_id="<?php echo $cat_ids[$i]  ?>"><?php echo $unik_cat[$i] ?></p>
       </li>
     <?php
