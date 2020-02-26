@@ -349,4 +349,6 @@ footer{
 footer a{
 	color:white;
 }
-.micro
+.flex{
+	display: flex;
+}
