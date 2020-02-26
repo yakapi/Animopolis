@@ -1,75 +1,469 @@
+@charset "UTF-8";
 /*
-Error: Invalid CSS after "    font-size: ": expected expression (e.g. 1px, bold), was ";"
-        on line 27 of C:/xampp/htdocs/project-commanditaire/wp-content/themes/Animopolis/assets/scss/_contact.scss
-        from line 11 of C:\xampp\htdocs\project-commanditaire\wp-content\themes\Animopolis\assets\scss\style.scss
-
-22:  height: 100px;
-23: }
-24: 
-25: .wpcf7 input[type="text"],
-26: .wpcf7 input[type="email"]{
-27:     font-size: ;
-28: }
-
-Backtrace:
-C:/xampp/htdocs/project-commanditaire/wp-content/themes/Animopolis/assets/scss/_contact.scss:27
-C:\xampp\htdocs\project-commanditaire\wp-content\themes\Animopolis\assets\scss\style.scss:11
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+Theme Name: animoplis
+Theme URI: https://animopolis.fr
+Author: Barlier Victor /Jordan Maldiney / Jérome Dias
+Author URI: https://victorbarlier.fr
+Description: Thème privé pour Animopolis
+Requires at least: WordPress 5.0
+Version: 1.0
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    font-size: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 27 of C:/xampp/htdocs/project-commanditaire/wp-content/themes/Animopolis/assets/scss/_contact.scss\A         from line 11 of C:\xampp\htdocs\project-commanditaire\wp-content\themes\Animopolis\assets\scss\style.scss\A \A 22:  height: 100px;\A 23: }\A 24: \A 25: .wpcf7 input[type=\"text\"],\A 26: .wpcf7 input[type=\"email\"]{\A 27:     font-size: ;\A 28: }"; }
+@font-face {
+  font-family: "DANIELBK";
+  src: url("/assets/font/DANIELBK.TTF") format("ttf"); }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+h1 {
+  font-family: "Daniel Black";
+  font-size: 22px; }
+
+h2 {
+  font-family: "Daniel Black";
+  font-size: 20px;
+  font-weight: bold; }
+
+h3 {
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: bold; }
+
+body {
+  font-family: "Arial";
+  font-size: 16px; }
+
+/*========================================================*/
+/*========================================================*/
+/*===================NAVIGATION===========================*/
+/*========================================================*/
+/*========================================================*/
+.barre-navigation {
+  height: 70px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.logo {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.custom-logo {
+  height: 50px;
+  width: 50px; }
+
+.menu-main-container {
+  height: 100%; }
+  .menu-main-container .menu {
+    display: flex;
+    height: 100%; }
+    .menu-main-container .menu li {
+      width: 120px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .menu-main-container .menu li a {
+        color: #707173;
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .menu-main-container .menu li a:hover {
+        text-decoration: none; }
+    .menu-main-container .menu li:last-child {
+      margin-left: 5px;
+      position: relative; }
+    .menu-main-container .menu li:last-child::after {
+      content: "";
+      position: absolute;
+      left: 1px;
+      height: 62px;
+      width: 1px;
+      background-color: grey; }
+
+/*========================================================*/
+/*========================================================*/
+/*=====================CAROUSEL===========================*/
+/*========================================================*/
+/*========================================================*/
+.carousel-news {
+  height: 420px; }
+
+.container-carousel {
+  border-bottom: 1px solid #707173;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  position: absolute; }
+
+.timer {
+  height: 1%;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #009ee0;
+  z-index: 10; }
+
+.slideshow {
+  position: relative;
+  height: 100%; }
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background: #bbb;
+  color: #ddd;
+  text-align: center;
+  line-height: 320px;
+  font-size: 640px; }
+
+.slide {
+  display: none; }
+
+/*========================================================*/
+/*========================================================*/
+/*=================ABOUT SECTION=========================*/
+/*========================================================*/
+/*========================================================*/
+.about-sct {
+  display: flex;
+  justify-content: space-around; }
+
+.horaire-box,
+.contact-box {
+  height: auto;
+  width: 290px;
+  border: 2px solid #707173;
+  font-family: "Arial";
+  font-size: 16px;
+  color: #707173;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .horaire-box .contact-content,
+  .contact-box .contact-content {
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px; }
+  .horaire-box .btn-contact-content,
+  .contact-box .btn-contact-content {
+    width: 100%;
+    height: auto;
+    background-color: #707173;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .horaire-box .btn-contact-content a,
+    .contact-box .btn-contact-content a {
+      color: white;
+      padding: 20px; }
+
+.biographie-box {
+  height: 250px;
+  width: 560px;
+  border: 2px solid #707173;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Arial";
+  font-size: 16px;
+  color: #707173;
+  text-align: center;
+  padding: 15px; }
+  .biographie-box .container-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around; }
+    .biographie-box .container-logo .logo-bio {
+      height: auto;
+      width: 150px; }
+
+.horaire-content,
+.biographie-content {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+	line-height: 20px; }
+
+.contact-social-media {
+  display: flex;
+  justify-content: space-around; }
+  .contact-social-media .logo-media {
+    height: 30px;
+    width: auto;
+    color: #707173; }
+
+/*========================================================*/
+/*========================================================*/
+/*=================PET BANNER=============================*/
+/*========================================================*/
+/*========================================================*/
+.banner-image {
+  height: 300px;
+  width: 100%; }
+  .banner-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.banner-content-title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .banner-content-title img {
+    height: 120px;
+    width: 120px; }
+
+.banner-box-sizer {
+  margin: 54px; }
+
+.banner-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .banner-title h2 {
+    font-size: 32px;
+    font-weight: bold; }
+
+.slog {
+  width: 65%; }
+
+.pet-banner .banner-box:nth-child(2n) .banner-content-title {
+  align-items: flex-end;
+  justify-content: flex-end; }
+.pet-banner .banner-box:nth-child(2n) .banner-title {
+  flex-direction: row-reverse; }
+  .pet-banner .banner-box:nth-child(2n) .banner-title h2 {
+    align-self: center; }
+.pet-banner .banner-box:nth-child(2n) .banner-box-sizer {
+  display: flex;
+  flex-direction: column; }
+.pet-banner .banner-box:nth-child(2n) .slog {
+  text-align: right;
+  align-self: flex-end; }
+
+/*========================================================*/
+/*========================================================*/
+/*=================SATISFACTION=============================*/
+/*========================================================*/
+/*========================================================*/
+.satisfaction {
+  display: flex;
+  margin-top: 50px; }
+
+.sat-box {
+  width: 50%; }
+
+.validate-box {
+  border: 1px solid #707173;
+  border-radius: 5px;
+  width: 50%; }
+
+.validate-ligne {
+  display: flex;
+  align-items: center; }
+
+.middle-ligne {
+  background-color: #707173;
+  color: white; }
+
+.encard-check {
+  height: 45px;
+  width: 45px; }
+
+.encard-check img {
+  height: 100%;
+  width: 100%; }
+
+.txt-sat {
+  margin-left: 15px; }
+
+.satisfaction-bar {
+  width: 50%; }
+
+.result-progress {
+  height: 45px;
+  width: 65px;
+  border: 1px solid #707173;
+  border-radius: 5px;
+  top: -15px;
+  right: 0;
+  background-color: #707173;
+  color: white; }
+
+.result-progress::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #707173;
+  top: 35px;
+  transform: rotate(45deg); }
+
+#myProgress {
+  width: 100%;
+  border: 1px solid #707173;
+  border-radius: 5px; }
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #707173; }
+
+/*========================================================*/
+/*========================================================*/
+/*=================FOOTER=============================*/
+/*========================================================*/
+/*========================================================*/
+footer {
+  margin-top: 50px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #707173;
+  color: white; }
+
+footer a {
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */

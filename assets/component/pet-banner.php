@@ -11,7 +11,7 @@ if ($the_query->have_posts()) {
   while ($the_query->have_posts()) {
     $the_query->the_post();
 ?><div class="banner-box">
-      <a class="da-blk" style="color: <?php the_field('color-banner') ?>" href="#">
+      <a class="da-blk" style="color: <?php the_field('color-banner') ?>" href="<?php the_permalink( )?>">
         <div class="banner-content-box rltv">
           <div class="banner-content-title w-100 h-100 ablst">
             <div class="banner-box-sizer">

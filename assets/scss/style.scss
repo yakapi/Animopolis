@@ -8,116 +8,230 @@ Requires at least: WordPress 5.0
 Version: 1.0
 */
 
-@import 'contact.scss';
+@font-face {
+  font-family: "DANIELBK";
+  src: url("/assets/font/DANIELBK.TTF") format("ttf");
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+$font-txt: "Arial";
+$size-txt: 16px;
+$font-titre: "Daniel Black";
+$size-h3: 18px;
+$size-h2: 20px;
+$size-h1: 22px;
+$blue: #009ee0;
+$red: #e20019;
+$jaune: #f3e518;
+$violet: #a00c58;
+$vert: #97bf0d;
+$orange: #f8b994;
+$gris: #707173;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
-a:hover{
-	text-decoration: none;
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-family: $font-titre;
+  font-size: $size-h1;
+}
+h2 {
+  font-family: $font-titre;
+  font-size: $size-h2;
+  font-weight: bold;
+}
+h3 {
+  font-family: $font-txt;
+  font-size: $size-h3;
+  font-weight: bold;
+}
+body {
+  font-family: $font-txt;
+  font-size: $size-txt;
 }
 /*========================================================*/
 /*========================================================*/
 /*===================NAVIGATION===========================*/
 /*========================================================*/
 /*========================================================*/
-.barre-navigation{
-	height: 70px;
-	border-bottom: 1px solid black;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+.barre-navigation {
+  height: 70px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.logo{
-	margin-left: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.logo {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.custom-logo{
-	height: 50px;
-	width: 50px;
+.custom-logo {
+  height: 50px;
+  width: 50px;
 }
-.menu-main-container{
-	height: 100%;
-}
-.menu-main-container .menu{
-	display: flex;
-	height: 100%;
-}
-.menu-main-container .menu li{
-	width: 120px;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.menu-main-container .menu li a{
-	color: grey;
-	font-size: 12px;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-.menu-main-container .menu li a:hover{
-	text-decoration: none;
-}
-
-.menu-main-container .menu li:last-child {
-	margin-left: 5px;
-	position: relative;
-}
-.menu-main-container .menu li:last-child::after {
-	content: "";
-	position: absolute;
-	left: 1px;
-	height: 62px;
-	width: 1px;
-	background-color: grey;
+.menu-main-container {
+  height: 100%;
+  .menu {
+    display: flex;
+    height: 100%;
+    li {
+      width: 120px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: $gris;
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    li:last-child {
+      margin-left: 5px;
+      position: relative;
+    }
+    li:last-child::after {
+      content: "";
+      position: absolute;
+      left: 1px;
+      height: 62px;
+      width: 1px;
+      background-color: grey;
+    }
+  }
 }
 
 /*========================================================*/
@@ -125,11 +239,11 @@ a:hover{
 /*=====================CAROUSEL===========================*/
 /*========================================================*/
 /*========================================================*/
-.carousel-news{
-	height: 420px;
+.carousel-news {
+  height: 420px;
 }
 .container-carousel {
-  border-bottom: 1px solid #575757;
+  border-bottom: 1px solid $gris;
   width: 100%;
   height: 420px;
   overflow: hidden;
@@ -141,7 +255,7 @@ a:hover{
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #09f;
+  background: $blue;
   z-index: 10;
 }
 .slideshow {
@@ -152,196 +266,245 @@ a:hover{
   width: 100%;
   height: 100%;
   background: #bbb;
-  color:#ddd;
+  color: #ddd;
   text-align: center;
   line-height: 320px;
   font-size: 640px;
+}
+
+.slide {
+  display: none;
+}
+/*========================================================*/
+/*========================================================*/
+/*=================ABOUT SECTION=========================*/
+/*========================================================*/
+/*========================================================*/
+.about-sct {
+  display: flex;
+  justify-content: space-around;
+}
+.horaire-box,
+.contact-box {
+  height: auto;
+  width: 290px;
+  border: 2px solid $gris;
+  font-family: $font-txt;
+  font-size: $size-txt;
+  color: $gris;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .contact-content {
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
   }
+  .btn-contact-content {
+    width: 100%;
+    height: auto;
+    background-color: $gris;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: white;
+      padding: 20px;
+    }
+  }
+}
+.biographie-box {
+  height: 250px;
+  width: 560px;
+  border: 2px solid $gris;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: $font-txt;
+  font-size: $size-txt;
+  color: $gris;
+  text-align: center;
+  padding: 15px;
+  .container-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
 
- .slide { display: none;}
- /*========================================================*/
- /*========================================================*/
- /*=================ABOUT SECTION=========================*/
- /*========================================================*/
- /*========================================================*/
-	.about-sct{
-		display: flex;
-		justify-content: space-around;
-	}
- .horaire-box, .contact-box{
-	 height: 250px;
-	 width: 280px;
-	 border: 1px solid grey;
- }
- .biographie-box{
-	 height: 250px;
-	 width: 560px;
-	 border: 1px solid grey;
- }
- .horaire-content, .biographie-content{
-	 height: 88%;
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: space-around;
- }
- .contact-content{
-	 height: 72%;
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: space-around;
- }
- .btn-contact-content{
-	 height: 16%;
-	 background-color: grey;
- }
- .btn-contact-content a{
-	 color: white;
- }
- .contact-social-media{
-	 display: flex;
-	 justify-content: space-around;
- }
- /*========================================================*/
- /*========================================================*/
- /*=================PET BANNER=============================*/
- /*========================================================*/
- /*========================================================*/
+    .logo-bio {
+      height: auto;
+      width: 150px;
+    }
+  }
+}
+.horaire-content,
+.biographie-content {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
- .banner-image{
-	 height: 300px;
-	 width: 100%;
- }
- .banner-image img{
-	 height: 100%;
-	 width: 100%;
- }
+.contact-social-media {
+  display: flex;
+  justify-content: space-around;
+  .logo-media{
+    height:30px;
+    width: auto;
+    color: $gris;
+  }
+}
+/*========================================================*/
+/*========================================================*/
+/*=================PET BANNER=============================*/
+/*========================================================*/
+/*========================================================*/
 
- .banner-content-title{
-	 display: flex;
-	 align-items: flex-start;
-	 flex-direction: column;
-	 justify-content: flex-end;
- }
- .banner-content-title img{
-	 height: 120px;
-	 width: 120px;
- }
- .banner-box-sizer{
-	 margin: 54px;
- }
- .banner-title{
-	 display: flex;
-	 flex-direction: row;
-	 align-items: center;
- }
- .banner-title h2{
-	 font-size: 32px;
-	 font-weight: bold;
- }
- .slog{
-	 width: 65%;
- }
- .pet-banner .banner-box:nth-child(2n) .banner-content-title{
-	 align-items: flex-end;
-	 justify-content: flex-end;
- }
- .pet-banner .banner-box:nth-child(2n) .banner-title{
-	 flex-direction: row-reverse;
- }
- .pet-banner .banner-box:nth-child(2n) .banner-title h2{
-	 align-self: center;
- }
- .pet-banner .banner-box:nth-child(2n) .banner-box-sizer{
-	 display: flex;
-	 flex-direction: column;
- }
- .pet-banner .banner-box:nth-child(2n) .slog{
-	 text-align: right;
-	 align-self: flex-end;
- }
- /*========================================================*/
- /*========================================================*/
- /*=================SATISFACTION=============================*/
- /*========================================================*/
- /*========================================================*/
-	.satisfaction{
-		display: flex;
-	}
-	.sat-box{
-		width: 50%;
-	}
-	.validate-box{
-		border: 1px solid grey;
-		border-radius: 5px;
-		width: 50%;
-	}
-	.validate-ligne{
-		display: flex;
-		align-items: center;
-	}
-	.middle-ligne{
-		background-color: grey;
-		color: white;
-	}
-	.encard-check{
-		height: 45px;
-		width: 45px;
-	}
-	.encard-check img{
-		height: 100%;
-		width: 100%;
-	}
-	.txt-sat{
-		margin-left: 15px;
-	}
-	.satisfaction-bar{
-		width: 50%;
-	}
-	.result-progress{
-		height: 45px;
-		width: 65px;
-		border: 1px solid darkgrey;
-		border-radius: 5px;
-		top: -15px;
-		right: 0;
-		background-color: grey;
-		color: white;
-	}
-	.result-progress::after{
-		content: "";
-		position: absolute;
-		width: 20px;
-		height: 20px;
-		background-color: grey;
-		top: 35px;
-		transform: rotate(45deg);
-	}
- #myProgress {
- width: 100%;
- border: 1px solid grey;
- border-radius: 5px;
+.banner-image {
+  height: 300px;
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.banner-content-title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  img {
+    height: 120px;
+    width: 120px;
+  }
+}
+.banner-box-sizer {
+  margin: 54px;
+}
+.banner-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+.slog {
+  width: 65%;
+}
+.pet-banner .banner-box:nth-child(2n) {
+  .banner-content-title {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .banner-title {
+    flex-direction: row-reverse;
+    h2 {
+      align-self: center;
+    }
+  }
+  .banner-box-sizer {
+    display: flex;
+    flex-direction: column;
+  }
+  .slog {
+    text-align: right;
+    align-self: flex-end;
+  }
+}
+/*========================================================*/
+/*========================================================*/
+/*=================SATISFACTION=============================*/
+/*========================================================*/
+/*========================================================*/
+.satisfaction {
+  display: flex;
+  margin-top: 50px;
+}
+.sat-box {
+  width: 50%;
+}
+.validate-box {
+  border: 1px solid $gris;
+  border-radius: 5px;
+  width: 50%;
+}
+.validate-ligne {
+  display: flex;
+  align-items: center;
+}
+.middle-ligne {
+  background-color: $gris;
+  color: white;
+}
+.encard-check {
+  height: 45px;
+  width: 45px;
+}
+.encard-check img {
+  height: 100%;
+  width: 100%;
+}
+.txt-sat {
+  margin-left: 15px;
+}
+.satisfaction-bar {
+  width: 50%;
+}
+.result-progress {
+  height: 45px;
+  width: 65px;
+  border: 1px solid $gris;
+  border-radius: 5px;
+  top: -15px;
+  right: 0;
+  background-color: $gris;
+  color: white;
+}
+.result-progress::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: $gris;
+  top: 35px;
+  transform: rotate(45deg);
+}
+#myProgress {
+  width: 100%;
+  border: 1px solid $gris;
+  border-radius: 5px;
 }
 
 #myBar {
- width: 1%;
- height: 30px;
- background-color: grey;
+  width: 1%;
+  height: 30px;
+  background-color: $gris;
 }
-
 /*========================================================*/
 /*========================================================*/
 /*=================FOOTER=============================*/
 /*========================================================*/
 /*========================================================*/
-footer{
-	margin-top: 50px;
-	height: 200px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: grey;
-	color: white;
+footer {
+  margin-top: 50px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $gris;
+  color: white;
 }
-footer a{
-	color:white;
+footer a {
+  color: white;
 }
