@@ -82,16 +82,30 @@ $cat_ids = array_values($cat_ids);
     ?>
   </ul>
 </nav>
+<div class="brand-choice-screen w-100 flx-ac">
+<div style="border-top: 1px solid <?php the_field('border-filter') ?>;" class="brand-choice-content pall-15">
 <?php
+
+$border_filter = get_field('border-filter');
+
+
 $args = array('post_type' => 'marque', 'category_name' => 'marque', 'tag' => $espace);
 $the_query = new WP_Query($args);
 if ($the_query->have_posts()) {
-  echo '<ul id="marques">';
+  echo '<ul id="marques" class="marque-block">';
   while ($the_query->have_posts()) {
     $the_query->the_post();
     echo "<li>";
-    the_title();
-    the_post_thumbnail();
+    ?>
+    <div style="border: 1px solid <?php echo $border_filter; ?>"  class="affiche-brand-image flx-ac">
+      <div class="encard-logo-brand">
+        <?php the_post_thumbnail(); ?>
+      </div>
+    </div>
+    <div class="content-brand">
+      <h2 class="txt-scde"><?php the_title(); ?></h2>
+    </div>
+    <?php
     echo "</li>";
   }
   echo '</ul>';
@@ -100,6 +114,10 @@ if ($the_query->have_posts()) {
 }
 /* Restore original Post Data */
 wp_reset_postdata();
+?>
+</div>
+</div>
+<?php
 
 get_footer();
 wp_footer();
