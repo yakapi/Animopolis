@@ -1,0 +1,65 @@
+/*========================================================*/
+/*========================================================*/
+/*=================CONTACT================================*/
+/*========================================================*/
+/*========================================================*/
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.pagecontact{
+    .contact{
+
+        margin :1% 5% 0 15%;
+        label{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    .gmap{
+        margin :1% 15% 0 5%;
+        .infos{
+            .coordonnees{
+                width: 50%;
+                margin: auto;
+            }
+            .horaires{
+                width: 50%;
+                margin: auto;
+            }
+            background-color: grey;
+            color: white;
+            text-align: center;
+            font-size: 17px;
+            line-height: 2rem;
+        }
+    }
+}
+
+.wpcf7{
+    textarea{
+        background-color: #fff;
+        color: #000;
+        width: 400px;
+        height: 200px;
+        resize: none;
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+    input[type="submit"]{
+        height: 50px;
+        width: 400px;
+        background-color: grey;
+        color: white;
+        
+    }
+    input[type="text"], input[type="email"]{
+    width: 400px;
+    height: 30px;
+    margin: 10px 0;
+        font-size: 20px;
+}
+}
