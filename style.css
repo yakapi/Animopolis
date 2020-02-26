@@ -8,69 +8,90 @@ Description: Thème privé pour Animopolis
 Requires at least: WordPress 5.0
 Version: 1.0
 */
-/*========================================================*/
-/*========================================================*/
-/*=================CONTACT================================*/
-/*========================================================*/
-/*========================================================*/
-.flex {
-  display: flex;
-  justify-content: space-around; }
-
-.pagecontact .contact {
-  margin: 1% 5% 0 15%; }
-  .pagecontact .contact label {
-    font-size: 20px; }
-  .pagecontact .contact h2 {
-    font-size: 30px;
-    margin-bottom: 20px; }
-.pagecontact .gmap {
-  margin: 1% 15% 0 5%; }
-  .pagecontact .gmap .infos {
-    background-color: grey;
-    color: white;
-    text-align: center;
-    font-size: 17px;
-    line-height: 2rem; }
-    .pagecontact .gmap .infos .coordonnees {
-      width: 50%;
-      margin: auto; }
-    .pagecontact .gmap .infos .horaires {
-      width: 50%;
-      margin: auto; }
-
-.wpcf7 textarea {
-  background-color: #fff;
-  color: #000;
-  width: 400px;
-  height: 200px;
-  resize: none;
-  font-size: 20px;
-  margin: 10px 0 0 0; }
-.wpcf7 input[type="submit"] {
-  height: 50px;
-  width: 400px;
-  background-color: grey;
-  color: white; }
-.wpcf7 input[type="text"], .wpcf7 input[type="email"] {
-  width: 400px;
-  height: 30px;
-  margin: 10px 0;
-  font-size: 20px; }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+@font-face {
+  font-family: "DANIELBK";
+  src: url("/assets/font/DANIELBK.TTF") format("ttf"); }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -79,22 +100,35 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -106,6 +140,24 @@ a {
 
 a:hover {
   text-decoration: none; }
+
+h1 {
+  font-family: "Daniel Black";
+  font-size: 22px; }
+
+h2 {
+  font-family: "Daniel Black";
+  font-size: 20px;
+  font-weight: bold; }
+
+h3 {
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: bold; }
+
+body {
+  font-family: "Arial";
+  font-size: 16px; }
 
 /*========================================================*/
 /*========================================================*/
@@ -131,39 +183,33 @@ a:hover {
 
 .menu-main-container {
   height: 100%; }
-
-.menu-main-container .menu {
-  display: flex;
-  height: 100%; }
-
-.menu-main-container .menu li {
-  width: 120px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.menu-main-container .menu li a {
-  color: grey;
-  font-size: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.menu-main-container .menu li a:hover {
-  text-decoration: none; }
-
-.menu-main-container .menu li:last-child {
-  margin-left: 5px;
-  position: relative; }
-
-.menu-main-container .menu li:last-child::after {
-  content: "";
-  position: absolute;
-  left: 1px;
-  height: 62px;
-  width: 1px;
-  background-color: grey; }
+  .menu-main-container .menu {
+    display: flex;
+    height: 100%; }
+    .menu-main-container .menu li {
+      width: 120px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .menu-main-container .menu li a {
+        color: #707173;
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .menu-main-container .menu li a:hover {
+        text-decoration: none; }
+    .menu-main-container .menu li:last-child {
+      margin-left: 5px;
+      position: relative; }
+    .menu-main-container .menu li:last-child::after {
+      content: "";
+      position: absolute;
+      left: 1px;
+      height: 62px;
+      width: 1px;
+      background-color: grey; }
 
 /*========================================================*/
 /*========================================================*/
@@ -174,7 +220,7 @@ a:hover {
   height: 420px; }
 
 .container-carousel {
-  border-bottom: 1px solid #575757;
+  border-bottom: 1px solid #707173;
   width: 100%;
   height: 420px;
   overflow: hidden;
@@ -186,7 +232,7 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #09f;
+  background: #009ee0;
   z-index: 10; }
 
 .slideshow {
@@ -214,38 +260,75 @@ a:hover {
   display: flex;
   justify-content: space-around; }
 
-.horaire-box, .contact-box {
-  height: 250px;
-  width: 280px;
-  border: 1px solid grey; }
+.horaire-box,
+.contact-box {
+  height: auto;
+  width: 290px;
+  border: 2px solid #707173;
+  font-family: "Arial";
+  font-size: 16px;
+  color: #707173;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .horaire-box .contact-content,
+  .contact-box .contact-content {
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px; }
+  .horaire-box .btn-contact-content,
+  .contact-box .btn-contact-content {
+    width: 100%;
+    height: auto;
+    background-color: #707173;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .horaire-box .btn-contact-content a,
+    .contact-box .btn-contact-content a {
+      color: white;
+      padding: 20px; }
 
 .biographie-box {
   height: 250px;
   width: 560px;
-  border: 1px solid grey; }
+  border: 2px solid #707173;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Arial";
+  font-size: 16px;
+  color: #707173;
+  text-align: center;
+  padding: 15px; }
+  .biographie-box .container-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around; }
+    .biographie-box .container-logo .logo-bio {
+      height: auto;
+      width: 150px; }
 
-.horaire-content, .biographie-content {
+.horaire-content,
+.biographie-content {
   height: 88%;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.contact-content {
-  height: 72%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.btn-contact-content {
-  height: 16%;
-  background-color: grey; }
-
-.btn-contact-content a {
-  color: white; }
-
 .contact-social-media {
   display: flex;
   justify-content: space-around; }
+  .contact-social-media .logo-media {
+    height: 30px;
+    width: auto;
+    color: #707173; }
 
 /*========================================================*/
 /*========================================================*/
@@ -255,20 +338,19 @@ a:hover {
 .banner-image {
   height: 300px;
   width: 100%; }
-
-.banner-image img {
-  height: 100%;
-  width: 100%; }
+  .banner-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .banner-content-title {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-end; }
-
-.banner-content-title img {
-  height: 120px;
-  width: 120px; }
+  .banner-content-title img {
+    height: 120px;
+    width: 120px; }
 
 .banner-box-sizer {
   margin: 54px; }
@@ -277,10 +359,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center; }
-
-.banner-title h2 {
-  font-size: 32px;
-  font-weight: bold; }
+  .banner-title h2 {
+    font-size: 32px;
+    font-weight: bold; }
 
 .slog {
   width: 65%; }
@@ -288,17 +369,13 @@ a:hover {
 .pet-banner .banner-box:nth-child(2n) .banner-content-title {
   align-items: flex-end;
   justify-content: flex-end; }
-
 .pet-banner .banner-box:nth-child(2n) .banner-title {
   flex-direction: row-reverse; }
-
-.pet-banner .banner-box:nth-child(2n) .banner-title h2 {
-  align-self: center; }
-
+  .pet-banner .banner-box:nth-child(2n) .banner-title h2 {
+    align-self: center; }
 .pet-banner .banner-box:nth-child(2n) .banner-box-sizer {
   display: flex;
   flex-direction: column; }
-
 .pet-banner .banner-box:nth-child(2n) .slog {
   text-align: right;
   align-self: flex-end; }
@@ -309,13 +386,14 @@ a:hover {
 /*========================================================*/
 /*========================================================*/
 .satisfaction {
-  display: flex; }
+  display: flex;
+  margin-top: 50px; }
 
 .sat-box {
   width: 50%; }
 
 .validate-box {
-  border: 1px solid grey;
+  border: 1px solid #707173;
   border-radius: 5px;
   width: 50%; }
 
@@ -324,7 +402,7 @@ a:hover {
   align-items: center; }
 
 .middle-ligne {
-  background-color: grey;
+  background-color: #707173;
   color: white; }
 
 .encard-check {
@@ -344,11 +422,11 @@ a:hover {
 .result-progress {
   height: 45px;
   width: 65px;
-  border: 1px solid darkgrey;
+  border: 1px solid #707173;
   border-radius: 5px;
   top: -15px;
   right: 0;
-  background-color: grey;
+  background-color: #707173;
   color: white; }
 
 .result-progress::after {
@@ -356,19 +434,19 @@ a:hover {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: grey;
+  background-color: #707173;
   top: 35px;
   transform: rotate(45deg); }
 
 #myProgress {
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #707173;
   border-radius: 5px; }
 
 #myBar {
   width: 1%;
   height: 30px;
-  background-color: grey; }
+  background-color: #707173; }
 
 /*========================================================*/
 /*========================================================*/
