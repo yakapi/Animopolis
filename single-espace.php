@@ -95,15 +95,17 @@ if ($the_query->have_posts()) {
   echo '<ul id="marques" class="marque-block">';
   while ($the_query->have_posts()) {
     $the_query->the_post();
-    echo "<li>";
+    echo "<li class='brand-card flx-ac mall-15'>";
     ?>
     <div style="border: 1px solid <?php echo $border_filter; ?>"  class="affiche-brand-image flx-ac">
       <div class="encard-logo-brand">
         <?php the_post_thumbnail(); ?>
       </div>
     </div>
-    <div class="content-brand">
+    <div class="content-brand pall-15 txt-cl-princ">
       <h2 class="txt-scde"><?php the_title(); ?></h2>
+      <p class="ita"><?php the_field('slogan-brand'); ?></p>
+      <p><?php the_field('intro-brand'); ?></p>
     </div>
     <?php
     echo "</li>";

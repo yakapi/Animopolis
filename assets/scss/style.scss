@@ -9,8 +9,8 @@ Version: 1.0
 */
 @import 'contact';
 @font-face {
-  font-family: "DANIELBK";
-  src: url("/assets/font/DANIELBK.TTF") format("ttf");
+  font-family: "Daniel Black";
+  src: url("assets/font/DANIELBK.TTF") format("ttf");
 }
 $font-txt: "Arial";
 $size-txt: 16px;
@@ -25,7 +25,9 @@ $violet: #a00c58;
 $vert: #97bf0d;
 $orange: #f8b994;
 $gris: #707173;
-
+.txt-cl-princ{
+  color: $gris;
+}
 html,
 body,
 div,
@@ -498,6 +500,9 @@ body {
 /*=================SINGLE ESPACE=============================*/
 /*========================================================*/
 /*========================================================*/
+.ita{
+  font-style: italic;
+}
 .filter-list{
 	width: 120px;
 }
@@ -510,7 +515,7 @@ body {
 	justify-content: space-around;
 }
 .affiche-brand-image{
-	background-color: lightblue;
+	background-color: #EDF8FE;
 	height: 120px;
 	width: 120px;
 
@@ -521,7 +526,21 @@ body {
 	img{
 		height: 100%;
 		width: 100%;
+    object-fit: contain;
 	}
+}
+.brand-card{
+  height: 250px;
+  width: 550px;
+  box-shadow: 0px 4px 10px lightgrey;
+}
+.content-brand{
+  width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 /*========================================================*/
 /*========================================================*/
